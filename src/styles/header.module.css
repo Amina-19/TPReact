@@ -1,0 +1,59 @@
+/* src/styles/header.module.css */
+
+header {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Usamos flexbox para alineación */
+    justify-content: space-between; /* Espacio entre el título y el menú */
+    align-items: center; /* Alineación vertical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Tamaño grande para el título */
+    font-weight: bold; /* Título en negrita */
+    margin: 0; /* Elimina los márgenes por defecto */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos en la lista */
+    display: flex; /* Los elementos se alinean en fila */
+    padding: 0; /* Quita el padding de la lista */
+    margin: 0; /* Elimina el margen */
+  }
+  
+  nav li {
+    margin-left: 30px; /* Espaciado entre los elementos del menú */
+  }
+  
+  nav a {
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.1rem; /* Tamaño de texto ligeramente mayor */
+    transition: color 0.3s ease; /* Transición suave de color */
+  }
+  
+  nav a:hover {
+    color: #FFD700; /* Color dorado al pasar el cursor */
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Disposición en columna en pantallas pequeñas */
+      text-align: center; /* Alineación de texto centrado */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Los elementos de la lista se apilan */
+      margin-top: 10px;
+    }
+  
+    nav li {
+      margin-left: 0; /* Elimina el margen a la izquierda */
+      margin-bottom: 10px; /* Espaciado entre los elementos */
+    }
+  }
+  

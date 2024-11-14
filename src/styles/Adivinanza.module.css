@@ -1,0 +1,55 @@
+/* src/styles/Adivinanza.module.css */
+
+.adivinaBox {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.adivinaBox:hover {
+  transform: scale(1.02);
+}
+
+h3 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: 'Verdana', sans-serif;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.answer {
+  font-family: 'Courier New', monospace;
+  color: #4CAF50;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.revealButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.revealButton:hover {
+  background-color: #45a049;
+}
+
+.revealButton:focus {
+  outline: none;
+}
